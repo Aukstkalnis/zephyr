@@ -1,0 +1,18 @@
+# ST Microelectronics BlueNRG2 MCU line
+
+# Copyright (c) 2020 Teltonika Telemedic
+# SPDX-License-Identifier: Apache-2.0
+
+config SOC_FAMILY_BLUENRG
+	bool
+	select HAS_SEGGER_RTT
+
+if SOC_FAMILY_BLUENRG
+
+config SOC_FAMILY
+	string
+	default "st_bluenrg"
+
+source "soc/arm/st_bluenrg/*/Kconfig.soc"
+
+endif # SOC_FAMILY_BLUENRG

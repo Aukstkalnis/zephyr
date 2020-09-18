@@ -1,0 +1,15 @@
+# Copyright (c) 2020 Teltonika Telemedic
+# SPDX-License-Identifier: Apache-2.0
+
+if SOC_BLUENRG248
+
+config SOC
+	default "bluenrg248"
+
+config NUM_IRQS
+	default 48
+
+config NUM_GPIOS
+	default 26
+
+endif # SOC_BLUENRG248

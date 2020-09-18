@@ -1,0 +1,19 @@
+# ST Microelectronics BlueNRG2 MCU line
+
+# Copyright (c) 2020 Teltonika Telemedic
+# SPDX-License-Identifier: Apache-2.0
+
+choice
+	prompt "BlueNRG2 MCU Selection"
+	depends on SOC_SERIES_BLUENRG2
+
+config SOC_BLUENRG232
+	bool "BLUENRG232"
+
+config SOC_BLUENRG234
+	bool "BLUENRG234"
+
+config SOC_BLUENRG248
+	bool "BLUENRG248"
+
+endchoice

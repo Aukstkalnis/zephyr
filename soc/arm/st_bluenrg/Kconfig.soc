@@ -1,0 +1,6 @@
+# ST Microelectronics BlueNRG2 MCU line
+
+# Copyright (c) 2020 Teltonika Telemedic
+# SPDX-License-Identifier: Apache-2.0
+
+source "soc/arm/st_bluenrg/*/Kconfig.series"
